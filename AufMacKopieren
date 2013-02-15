@@ -1,0 +1,11 @@
+#!/bin/sh
+
+volume="Gibbix_2012"
+echo "\n-> Starte Pearl-Skript\nBitte Admin-Passowort eingeben:"
+BASEDIR=$(dirname $0)
+
+sudo perl "$BASEDIR/dotm.pl" "Auf Mac kopieren" "/Volumes/$volume" ${USER}
+
+
+echo "Press enter...."
+read ans
